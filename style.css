@@ -10,9 +10,7 @@
 }
 
 body {
-    font-weight: 500;
-    font-size: 12.617rem;
-    line-height: 14.8rem;
+    
     color: #323238;
 
     height: 100vh;
@@ -31,9 +29,13 @@ main {
 
 }
 
-.timer .time {
+.clock {
     display: flex;
     justify-content: center;
+
+    font-weight: 500;
+    font-size: 12.617rem;
+    line-height: 14.8rem;
 
 }
 
@@ -43,6 +45,11 @@ main {
 
     margin-top: 1.7rem;
 }
+
+.buttons:hover{
+    cursor: pointer;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 13.8rem 13.8rem;
@@ -50,12 +57,52 @@ main {
     gap: 3.2rem;
 }
 
-.cards .card {
+.card-florest, .card-rain, .card-coffee, .card-fire {
     background-color: hsla(240, 9%, 89%, 1);
     border-radius: 2.4rem;
     width: 100%;
-
+    
     display: grid;
     place-content: center;
 
+    transition: 200ms;
+    
+}
+
+.card-florest:hover, .card-rain:hover, .card-coffee:hover, .card-fire:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.pressButton {
+    background-color: #02799D;
+    fill: white;
+    
+    
+}
+
+@media (max-width: 828px) {
+    main{
+        display: block;
+        
+    }
+
+    .timer {
+        margin: 0 0 5rem;
+        width: 25rem;
+        justify-content: center;
+    }
+
+    .clock {
+        font-size: 10rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 10rem 10rem;
+        grid-template-rows: 10rem 10rem;
+        gap: 3.2rem;
+        justify-content: center;
+    }
+    
 }
