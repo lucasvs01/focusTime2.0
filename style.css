@@ -10,7 +10,6 @@
 }
 
 body {
-    
     color: #323238;
 
     height: 100vh;
@@ -26,7 +25,6 @@ main {
 .timer {
     width: 32.1rem;
     margin-right: 19.2rem;
-
 }
 
 .clock {
@@ -36,7 +34,6 @@ main {
     font-weight: 500;
     font-size: 12.617rem;
     line-height: 14.8rem;
-
 }
 
 .timer .buttons {
@@ -66,7 +63,6 @@ main {
     place-content: center;
 
     transition: 200ms;
-    
 }
 
 .card-florest:hover, .card-rain:hover, .card-coffee:hover, .card-fire:hover {
@@ -77,16 +73,11 @@ main {
 .pressButton {
     background-color: #02799D;
     fill: white;
-    
-    
 }
-
-
 
 @media (max-width: 828px) {
     main{
         display: block;
-        
     }
 
     .timer {
