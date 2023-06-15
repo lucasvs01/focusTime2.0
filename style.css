@@ -61,8 +61,26 @@ main {
     
     display: grid;
     place-content: center;
+    place-items: center;
+    padding: 2.4rem;
 
+
+    gap: 3.2rem;
     transition: 200ms;
+
+    
+}
+
+
+
+div .icon svg {
+    
+}
+
+input {
+ width: 9rem;
+
+
 }
 
 .card-florest:hover, .card-rain:hover, .card-coffee:hover, .card-fire:hover {
@@ -74,6 +92,21 @@ main {
     background-color: #02799D;
     fill: white;
 }
+
+.hide {
+    display: none;
+}
+
+.darkmode, .lightmode {
+
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+}
+
+
+
+
 
 @media (max-width: 828px) {
     main{
@@ -97,5 +130,29 @@ main {
         gap: 3.2rem;
         justify-content: center;
     }
+
+    .cards svg {
+        width: 3rem;
+    }
+
+    .card-florest, .card-rain, .card-coffee, .card-fire {
+        border-radius: 2.4rem;
+        
+        padding: 1.5rem;
+    
+    gap: 1rem;
+        transition: 200ms;
+    
+        
+    }
+
+
+    input {
+        width: 7rem;
+       height: 1rem;
+       
+       }
+
+
     
 }
