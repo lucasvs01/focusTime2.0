@@ -12,10 +12,25 @@ const buttonStop = document.querySelector("#buttonStop")
 const buttonPlus = document.querySelector("#buttonPlus")
 const buttonMinus = document.querySelector("#buttonMinus")
 
-
 let secondsDisplay = document.querySelector(".seconds")
 let minutesDisplay = document.querySelector(".minutes")
 
+const body = document.querySelector("body")
+const darkIcon = document.querySelector(".darkmode-icon")
+const lightIcon = document.querySelector(".lightmode-icon")
+
+
+const svgPathPlay = document.querySelector("#buttonPlay path")
+const svgPathStop = document.querySelector("#buttonStop path")
+const svgPathPlus = document.querySelector("#buttonPlus path")
+const svgPathMinus = document.querySelector("#buttonMinus path")
+
+const range = document.querySelector("input")
+
+
 export {buttonRain, buttonFire, buttonFlorest,buttonCoffee, iconRain, iconFire, iconCoffee, 
-    iconFlorest, buttonPlay, buttonStop, buttonPlus, buttonMinus, secondsDisplay, minutesDisplay
+    iconFlorest, buttonPlay, buttonStop, buttonPlus, buttonMinus, secondsDisplay, minutesDisplay, body, darkIcon, lightIcon, 
+    svgPathMinus, svgPathPlay, svgPathStop, svgPathPlus, range
+    
+
 }

@@ -7,6 +7,7 @@
 :root {
     font-size: 62.5%;
     font-family: "Roboto", sans-serif;
+
 }
 
 body {
@@ -97,16 +98,46 @@ input {
     display: none;
 }
 
-.darkmode, .lightmode {
+
+.darkmode-icon, .lightmode-icon {
 
     position: absolute;
     top: 6rem;
     right: 6rem;
 }
 
+.darkmode-icon:hover, .lightmode-icon:hover {
+    cursor: pointer;
+}
+
+/*Darkmode*/
+
+.darkmode-body {
+    background-color: hsla(338, 5%, 7%, 1);
+    color: hsla(0, 0%, 100%, 1);
+    
+}
+
+.darkmode-cards {
+    background-color: hsla(240, 6%, 17%, 1);
+    fill: hsla(240, 7%, 78%, 1);
+}
+
+.darkmode-cards-press {
+    background-color: hsla(195, 74%, 15%, 1);
+    fill: white;
+}
 
 
 
+.darkmode-svg {
+
+    fill: hsla(240, 7%, 78%, 1);
+
+}
+
+
+/*Responsividade*/
 
 @media (max-width: 828px) {
     main{
@@ -129,6 +160,7 @@ input {
         grid-template-rows: 10rem 10rem;
         gap: 3.2rem;
         justify-content: center;
+        
     }
 
     .cards svg {
@@ -136,7 +168,7 @@ input {
     }
 
     .card-florest, .card-rain, .card-coffee, .card-fire {
-        border-radius: 2.4rem;
+        border-radius: 2rem;
         
         padding: 1.5rem;
     
@@ -150,9 +182,18 @@ input {
     input {
         width: 7rem;
        height: 1rem;
+
+       
        
        }
 
+       .darkmode-icon, .lightmode-icon {
 
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
     
 }
+
+

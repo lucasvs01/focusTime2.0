@@ -35,6 +35,14 @@ export default function Sounds (){
         florestSound.loop = true
         rainSound.pause()
         fireSound.pause()
+        coffeeSound.pause()
+            
+    }
+
+    function reset(){
+        florestSound.pause()
+        rainSound.pause()
+        fireSound.pause()
         coffeeSound.pause()    
     }
 
@@ -42,6 +50,7 @@ export default function Sounds (){
         soundCoffee,
         soundFire,
         soundFlorest,
-        soundRain
+        soundRain, 
+        reset
     }
 }

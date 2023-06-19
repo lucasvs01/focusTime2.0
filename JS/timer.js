@@ -29,20 +29,24 @@ export default function Timer ({
                 coutdown()
             }, 1000) 
             
-        }
+    }
 
-        function PlusFiveMinutesInTimer (){
-            minutesDisplay.textContent = String(Number(minutesDisplay.textContent) + 5).padStart(2, "00")
-        }
+    function PlusFiveMinutesInTimer (){
+        minutesDisplay.textContent = String(Number(minutesDisplay.textContent) + 5).padStart(2, "00")
+    }
 
-        function MinusFiveMinutesInTimer (){
-            minutesDisplay.textContent = String(Number(minutesDisplay.textContent) - 5).padStart(2, "00")
+    function MinusFiveMinutesInTimer (){
+        minutesDisplay.textContent = String(Number(minutesDisplay.textContent) - 5).padStart(2, "00")
 
-            if(minutesDisplay.textContent <= 0){
-                minutesDisplay.textContent = "00"
-            }    
-        }
-    
+        if(minutesDisplay.textContent <= 0){
+            minutesDisplay.textContent = "00"
+        }    
+    }
 
-    return {coutdown, stop, PlusFiveMinutesInTimer, MinusFiveMinutesInTimer}
+    function reset(){
+       secondsDisplay.textContent = "00"
+       minutesDisplay.textContent = "00"
+    }
+
+    return {coutdown, stop, PlusFiveMinutesInTimer, MinusFiveMinutesInTimer, reset}
 }
