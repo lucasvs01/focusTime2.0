@@ -6,7 +6,7 @@ import {buttonRain, buttonFire, buttonFlorest,buttonCoffee,
     buttonPlay, buttonStop, buttonPlus, buttonMinus, 
     secondsDisplay, minutesDisplay, 
     body, lightIcon, darkIcon,
-    svgPathMinus, svgPathPlay, svgPathStop, svgPathPlus, range } from "./elements.js"
+    svgPathMinus, svgPathPlay, svgPathStop, svgPathPlus} from "./elements.js"
 
 let controls = Controls({
     buttonRain,
@@ -31,8 +31,7 @@ let sounds = Sounds()
 
 let timer = Timer({
     secondsDisplay,
-    minutesDisplay,
-    
+    minutesDisplay,   
 })
   
     buttonPlay.addEventListener("click", function(){
@@ -59,6 +58,7 @@ let timer = Timer({
     buttonFire.addEventListener("click", function(){
         controls.activeButtonFireIfPress()
         sounds.soundFire()
+        
     })
     
     buttonCoffee.addEventListener("click", function(){
@@ -68,7 +68,7 @@ let timer = Timer({
     
     buttonFlorest.addEventListener("click", function(){
         controls.activeButtonFlorestIfPress()
-        sounds.soundFlorest()
+        sounds.soundFlorest() 
     })
 
     lightIcon.addEventListener("click", function(){
@@ -89,6 +89,6 @@ let timer = Timer({
         
     })
 
-    console.log(range.value)
+    
 
     

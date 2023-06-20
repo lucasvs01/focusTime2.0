@@ -1,7 +1,13 @@
+import {rangeFlorest, rangeRain, rangeCoffee, rangeFire} from "./elements.js"
+
 const florestSound = new Audio("./assets/Floresta.wav")
 const rainSound = new Audio("./assets/Chuva.wav")
 const fireSound = new Audio("./assets/Lareira.wav")
 const coffeeSound = new Audio("./assets/Cafeteria.wav")
+
+
+
+
 
 
 export default function Sounds (){
@@ -11,6 +17,8 @@ export default function Sounds (){
         rainSound.loop = true
         fireSound.pause()
         coffeeSound.pause()
+        rainSound.volume = rangeRain.value
+
 
     }
 
@@ -20,6 +28,8 @@ export default function Sounds (){
         fireSound.play()
         fireSound.loop =true
         coffeeSound.pause()
+        fireSound.volume = rangeFire.value
+
     }
 
     function soundCoffee (){
@@ -28,6 +38,8 @@ export default function Sounds (){
         fireSound.pause()
         coffeeSound.play()
         coffeeSound.loop = true
+        coffeeSound.volume = rangeCoffee.value
+
     }
 
     function soundFlorest (){
@@ -36,6 +48,7 @@ export default function Sounds (){
         rainSound.pause()
         fireSound.pause()
         coffeeSound.pause()
+        florestSound.volume = rangeFlorest.value
             
     }
 
@@ -43,7 +56,11 @@ export default function Sounds (){
         florestSound.pause()
         rainSound.pause()
         fireSound.pause()
-        coffeeSound.pause()    
+        coffeeSound.pause()
+        rangeFlorest.value = 0.5
+        rangeCoffee.value = 0.5
+        rangeRain.value = 0.5
+        rangeFire.value = 0.5
     }
 
     return {
@@ -52,5 +69,5 @@ export default function Sounds (){
         soundFlorest,
         soundRain, 
         reset
-    }
+        }
 }

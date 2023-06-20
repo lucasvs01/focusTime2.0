@@ -19,18 +19,21 @@ const body = document.querySelector("body")
 const darkIcon = document.querySelector(".darkmode-icon")
 const lightIcon = document.querySelector(".lightmode-icon")
 
-
 const svgPathPlay = document.querySelector("#buttonPlay path")
 const svgPathStop = document.querySelector("#buttonStop path")
 const svgPathPlus = document.querySelector("#buttonPlus path")
 const svgPathMinus = document.querySelector("#buttonMinus path")
 
-const range = document.querySelector("input")
+const rangeFlorest = document.querySelector(".card-florest input")
+const rangeRain = document.querySelector(".card-rain input")
+const rangeCoffee = document.querySelector(".card-coffee input")
+const rangeFire = document.querySelector(".card-fire input")
 
-
-export {buttonRain, buttonFire, buttonFlorest,buttonCoffee, iconRain, iconFire, iconCoffee, 
-    iconFlorest, buttonPlay, buttonStop, buttonPlus, buttonMinus, secondsDisplay, minutesDisplay, body, darkIcon, lightIcon, 
-    svgPathMinus, svgPathPlay, svgPathStop, svgPathPlus, range
-    
-
+export {buttonRain, buttonFire, buttonFlorest, buttonCoffee, 
+    iconRain, iconFire, iconCoffee, iconFlorest, 
+    buttonPlay, buttonStop, buttonPlus, buttonMinus, 
+    secondsDisplay, minutesDisplay, 
+    body, darkIcon, lightIcon, 
+    svgPathMinus, svgPathPlay, svgPathStop, svgPathPlus, 
+    rangeFlorest, rangeRain, rangeCoffee, rangeFire
 }
